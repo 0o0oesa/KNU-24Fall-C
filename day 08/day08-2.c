@@ -31,7 +31,7 @@ void movePointer(void* array) {
 	while(1) {
 		move = *((int*)array + x); 
 		printf("현재 위치 : (%d, %d) , 배열의 값 : %d\n", x / 10, x % 10, move); // x / 10은 행 인덱스, x % 10은 열 인덱스
-		x += move; // 현재 위치 x에 move값을 더하어 새로운 위치로 이동
+		x += move; // 현재 위치 x에 move값을 더하여 새로운 위치로 이동
 
 		if (x > SIZE * SIZE) {
 			x -= move; // 마지막 이동으로 인해 x의 값이 배열의 크기(100)을 넘어갈 경우 더 이동하지 않고 프로그램 종료되므로 이전 위치로 되돌리기
