@@ -15,7 +15,7 @@ void add(struct Vector v1, struct Vector v2) {
 	result.y = v1.y + v2.y;
 	result.z = v1.z + v2.z;
 
-	printf("벡터의 합은  x : %d, y : %d, z : %d\n", result.x, result.y, result.z);
+	printf("벡터의 합은   x : %d, y : %d, z : %d\n", result.x, result.y, result.z);
 }
 
 // 벡터의 차 계산하는 함수
@@ -26,7 +26,7 @@ void sub(struct Vector v1, struct Vector v2) {
 	result.y = v1.y - v2.y;
 	result.z = v1.z - v2.z;
 
-	printf("벡터의 차는  x : %d, y : %d, z : %d\n", result.x, result.y, result.z);
+	printf("벡터의 차는   x : %d, y : %d, z : %d\n", result.x, result.y, result.z);
 }
 
 // 벡터의 내적 계산하는 함수
@@ -63,8 +63,8 @@ int main() {
 	scanf("%d, %d, %d", &v2.x, &v2.y, &v2.z);
 
 	// 입력된 벡터 출력
-	printf("입력된 첫번째 벡터      %d, %d, %d\n", v1.x, v1.y, v1.z);
-	printf("입력된 두번째 벡터      %d, %d, %d\n", v2.x, v2.y, v2.z);
+	printf("입력된 첫번째 벡터       %d,      %d,      %d\n", v1.x, v1.y, v1.z);
+	printf("입력된 두번째 벡터       %d,      %d,      %d\n", v2.x, v2.y, v2.z);
 
 	printf("\n\n-----------------------------------------\n");
 	
