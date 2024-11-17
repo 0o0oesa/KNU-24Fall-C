@@ -35,7 +35,7 @@ void insert_customer(struct Customer* new_customer) {
         head = new_customer;
         return;
     }
-
+    
 // 고객 등급이 1에 가까울 수록 우선적으로 출력되고, 같은 등급일 경우 전체 주문량이 많을 수록 우선적으로 출력되고, 주문량이 같다면 포인트가 많을 수록 우선적으로 출력
     struct Customer* cur = head;
     while (cur) {
@@ -89,7 +89,7 @@ void delete_customer(const char* name) {
     printf("고객 '%s'을(를) 찾을 수 없습니다.\n", name);
 }
 
-// 고ㄱ의 이름을 입력받아 해당 고객 수정
+// 고객의 이름을 입력받아 해당 고객 수정
 void update_customer(const char* name, enum rank rank, int order_amount, int point) {
     struct Customer* cur = head;
     while (cur) {
